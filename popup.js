@@ -212,8 +212,10 @@ document.getElementById( "extra_options_auto_open_comments" ).addEventListener( 
   browserObj.storage.local.get(['extraopts']).then( result => {
     if (result !== null && Object.keys(result).length !== 0) currentExtraOpts = result.extraopts;
     currentExtraOpts.automatically_open_comments = e.target.checked;
+    browserObj.storage.local.set({ 'extraopts' : currentExtraOpts });
   })
 })
+
 document.getElementById( "extra_options_seek_amount" ).addEventListener( "input", e => {
   browserObj.storage.local.get(['extraopts']).then( result => {
     if (result !== null && Object.keys(result).length !== 0) currentExtraOpts = result.extraopts
