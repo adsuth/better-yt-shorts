@@ -51,6 +51,7 @@ const defaultExtraOptions = {
   skip_enabled:   false,
   skip_threshold: 500,
   automatically_open_comments: false,
+  seek_amount: 5,
 }
 
 // this is so that the bindings are always generated in the right order
@@ -122,6 +123,9 @@ browserObj.storage.local.get(['extraopts'])
         
         // set automatically close comments
         document.getElementById( "extra_options_auto_open_comments" ).checked = result.extraopts.automatically_open_comments;
+
+        // set seek amount
+        document.getElementById( "extra_options_seek_amount" ).value = result.extraopts.seek_amount;
       } 
 
   })
@@ -208,6 +212,12 @@ document.getElementById( "extra_options_auto_open_comments" ).addEventListener( 
   browserObj.storage.local.get(['extraopts']).then( result => {
     if (result !== null && Object.keys(result).length !== 0) currentExtraOpts = result.extraopts;
     currentExtraOpts.automatically_open_comments = e.target.checked;
+  })
+})
+document.getElementById( "extra_options_seek_amount" ).addEventListener( "input", e => {
+  browserObj.storage.local.get(['extraopts']).then( result => {
+    if (result !== null && Object.keys(result).length !== 0) currentExtraOpts = result.extraopts
+    currentExtraOpts.seek_amount = e.target.valueAsNumber;
     browserObj.storage.local.set({ 'extraopts' : currentExtraOpts });
   });
 });
