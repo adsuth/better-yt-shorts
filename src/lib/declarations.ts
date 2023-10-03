@@ -13,11 +13,11 @@ export const DEFAULT_KEYBINDS: DefaultsDictionary = {
   decreaseVolume:    "Minus",
   increaseVolume:    "Equal",
   toggleMute:        "KeyM",
-  nextFrame:         local("disabled"),
-  previousFrame:     local("disabled"),
+  nextFrame:         "Period",
+  previousFrame:     "Comma",
   restartShort:      "KeyJ",
-  nextShort:         local("disabled"), 
-  previousShort:     local("disabled"),
+  nextShort:         "KeyS", 
+  previousShort:     "KeyW",
 };
 
 export const KEYBINDS_ORDER: DefaultsDictionary = [
