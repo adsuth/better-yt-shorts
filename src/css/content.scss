@@ -44,6 +44,32 @@
   opacity: 1;
 }
 
+.betterYT-volume-slider
+{
+  position: absolute;
+  pointer-events: all !important;
+  accent-color: rgba(255,255,255,0.2);
+  opacity: 0.2;
+  transition: opacity .2s;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.betterYT-volume-slider.horizontal {
+  -webkit-appearance: slider-horizontal;
+  top: 17.5px;
+  right: 50px;
+}
+
+.betterYT-volume-slider.vertical {
+  -webkit-appearance: slider-vertical;
+  height: 100px;
+  right: 10px;
+  width: 33px;
+  top: 40px;
+}
+
+
 .autoplay-switch {
   position: relative;
   display: block;
@@ -59,18 +85,6 @@
   height: 0;
 }
 
-// tweaks padding when panel is open
-ytd-reel-player-overlay-renderer[is-watch-while-mode]div:has( .autoplay-slider )
-{
-  padding-top: 0px;
-  padding-bottom: 16px;
-}
-
-div:has( .autoplay-slider )
-{
-  padding-top: 16px;
-}
-
 .autoplay-slider {
   position: absolute;
   cursor: pointer;
@@ -78,11 +92,14 @@ div:has( .autoplay-slider )
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: #272727;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   background-color: rgba(255,255,255,0.1);
   border-radius: 27px;
 
   &:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: #3f3f3f;
   }
 
   &:before {
@@ -100,7 +117,7 @@ div:has( .autoplay-slider )
 }
 
 input:checked + .autoplay-slider {
-  background-color: rgba(255,255,255,0.2);
+  background-color: #3f3f3f;
 }
 
 input:checked + .autoplay-slider:before {
@@ -116,10 +133,10 @@ input:checked + .autoplay-slider:before {
     top: 18px;
   }
   .autoplay-slider {
-    background-color: rgba(255,255,255,0.2);
+    background-color: #ffffff1a;
   }
   input:checked + .autoplay-slider {
-    background-color: rgba(255,255,255,0.2);
+    background-color: #ffffff2a;
   }
   .betterYT-auto {
     padding-bottom: 16px;
