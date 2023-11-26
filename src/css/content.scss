@@ -94,12 +94,11 @@
   bottom: 0;
   background-color: #272727;
   -webkit-transition: 0.4s;
-  transition: 0.4s;
   background-color: rgba(255,255,255,0.1);
   border-radius: 27px;
 
   &:hover {
-    background-color: #3f3f3f;
+    background-color: rgba(255,255,255,0.2);
   }
 
   &:before {
@@ -117,7 +116,7 @@
 }
 
 input:checked + .autoplay-slider {
-  background-color: #3f3f3f;
+  background-color: rgba(255,255,255,0.2);
 }
 
 input:checked + .autoplay-slider:before {
