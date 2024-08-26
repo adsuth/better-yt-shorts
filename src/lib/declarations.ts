@@ -17,8 +17,8 @@ export const DEFAULT_KEYBINDS: StringDictionary = {
   decreaseSpeed: "KeyU",
   resetSpeed: "KeyI",
   increaseSpeed: "KeyO",
-  decreaseVolume: "Minus",
-  increaseVolume: "Equal",
+  // decreaseVolume: "Minus",
+  // increaseVolume: "Equal",
   // toggleMute: "KeyM",
   toggleFullScreen: "KeyF",
   nextFrame: local("disabled"),
@@ -34,8 +34,8 @@ export const KEYBINDS_ORDER: string[] = [
   "decreaseSpeed",
   "resetSpeed",
   "increaseSpeed",
-  "decreaseVolume",
-  "increaseVolume",
+  // "decreaseVolume",
+  // "increaseVolume",
   // "toggleMute",
   "toggleFullScreen",
   "restartShort",
@@ -52,7 +52,7 @@ export const DEFAULT_OPTIONS: PolyDictionary = {
   seekAmount: 5,
   automaticallyOpenComments: false,
   hideShortsOverlay: false,
-  showVolumeHorizontally: false,
+  // showVolumeHorizontally: false,
   defaultPlaybackRate: 1,
   fullScreenDoubleClick: true,
 };
@@ -65,7 +65,7 @@ export const OPTIONS_ORDER: string[] = [
   "skipEnabled",
   "skipThreshold",
   "hideShortsOverlay",
-  "showVolumeHorizontally",
+  // "showVolumeHorizontally",
 ];
 
 export const OPTION_DICTIONARY: OptionsDictionary = {
@@ -93,10 +93,10 @@ export const OPTION_DICTIONARY: OptionsDictionary = {
     desc: local("hideShortsOverlayTitle"),
     type: "checkbox",
   },
-  showVolumeHorizontally: {
-    desc: local("showVolumeHorizontally"),
-    type: "checkbox",
-  },
+  // showVolumeHorizontally: {
+  //   desc: local("showVolumeHorizontally"),
+  //   type: "checkbox",
+  // },
   defaultPlaybackRate: {
     desc: local("defaultPlaybackRate"),
     type: "number",
@@ -165,10 +165,10 @@ export const DEFAULT_SETTINGS: PolyDictionary = {
 
 export const DEFAULT_FEATURES: BooleanDictionary = {
   autoplay: true,
-  progressBar: true,
+  // progressBar: true,
   timer: true,
   playbackRate: true,
-  volumeSlider: true,
+  // volumeSlider: true,
   keybinds: true,
   viewCounter: true,
   uploadDate: true,
@@ -176,10 +176,10 @@ export const DEFAULT_FEATURES: BooleanDictionary = {
 
 export const FEATURES_ORDER: string[] = [
   "autoplay",
-  "progressBar",
+  // "progressBar",
   "timer",
   "playbackRate",
-  "volumeSlider",
+  // "volumeSlider",
   "keybinds",
   "viewCounter",
   "uploadDate",

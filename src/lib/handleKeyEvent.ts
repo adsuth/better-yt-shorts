@@ -65,29 +65,29 @@ export function handleKeyEvent(
       if (ytShorts.playbackRate < 16) ytShorts.playbackRate += 0.25;
       break;
 
-    case "increaseVolume":
-      if (ytShorts.volume < 1)
-        setVolume(
-          settings,
-          ytShorts.volume + VOLUME_INCREMENT_AMOUNT,
-          volumeSliderEnabled,
-        );
+    // case "increaseVolume":
+    //   if (ytShorts.volume < 1)
+    //     setVolume(
+    //       settings,
+    //       ytShorts.volume + VOLUME_INCREMENT_AMOUNT,
+    //       volumeSliderEnabled,
+    //     );
 
-      if (ytShorts.volume > 1) ytShorts.volume = 1;
+    //   if (ytShorts.volume > 1) ytShorts.volume = 1;
 
-      break;
+    //   break;
 
-    case "decreaseVolume":
-      if (ytShorts.volume > 0)
-        setVolume(
-          settings,
-          ytShorts.volume - VOLUME_INCREMENT_AMOUNT,
-          volumeSliderEnabled,
-        );
+    // case "decreaseVolume":
+    //   if (ytShorts.volume > 0)
+    //     setVolume(
+    //       settings,
+    //       ytShorts.volume - VOLUME_INCREMENT_AMOUNT,
+    //       volumeSliderEnabled,
+    //     );
 
-      if (ytShorts.volume < 0) ytShorts.volume = 0;
+    //   if (ytShorts.volume < 0) ytShorts.volume = 0;
 
-      break;
+    //   break;
 
     case "toggleFullScreen": {
       tryToggleFullscreen();

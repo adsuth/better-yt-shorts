@@ -55,20 +55,20 @@ function injectIfNotPresent(
         populateActionElement(state, settings, features);
       break;
 
-    case InjectionItemsEnum.PROGRESS_BAR:
-      if (!checkForInjectionMarker(getProgressBarList()))
-        modifyProgressBar(features["progressBar"]);
-      break;
+    // case InjectionItemsEnum.PROGRESS_BAR:
+    //   if (!checkForInjectionMarker(getProgressBarList()))
+    //     modifyProgressBar(features["progressBar"]);
+    //   break;
 
-    case InjectionItemsEnum.VOLUME_SLIDER:
-      if (!checkForInjectionMarker(getVolumeContainer()))
-        setVolumeSlider(
-          state,
-          settings,
-          features["showVolumeHorizontally"],
-          features["volumeSlider"],
-        );
-      break;
+    // case InjectionItemsEnum.VOLUME_SLIDER:
+    //   if (!checkForInjectionMarker(getVolumeContainer()))
+    //     setVolumeSlider(
+    //       state,
+    //       settings,
+    //       features["showVolumeHorizontally"],
+    //       features["volumeSlider"],
+    //     );
+    //   break;
 
     case InjectionItemsEnum.INFO:
       if (!checkForInjectionMarker(getInfoElement())) setInfo(features);

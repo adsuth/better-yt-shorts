@@ -25,14 +25,14 @@ Control your YouTube shorts just like a normal YouTube video! Features include p
 
 ## Features
 
-- **Progress bar** at the bottom with time and duration
+- ~~**Progress bar** at the bottom with time and duration~~
 - **Seeking** 5 seconds backward and forward with arrow keys (adjustable time)
 - Mini **timestamp** and speed above the like button (can be scrolled on!)
 - **Fullscreen** support with F key and double click
 - Decrease and increase **playback speed** with keys U and O
 - Click the speed button to revert to normal speed or toggle between different speeds
 - Toggle to auto skip short when current one ends
-- Control volume with the **volume slider** or with - and =, mute audio with M
+- ~~Control volume with the **volume slider** or with - and =, mute audio with M~~
 - **Customizable** keybinds
 - 🌐 Supports more than 10 languages!
 
